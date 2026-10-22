@@ -8,13 +8,11 @@
      - Start with the country code. For India that is 91.
      - Example: if your number is 98765 43210, write "919876543210"
    ============================================================ */
-const BUSINESS_WHATSAPP_NUMBER = "919999999999"; // <-- PLACEHOLDER: replace with your real number
-const BUSINESS_NAME = "Infinity Business Services"; // <-- used inside the enquiry message
+const BUSINESS_WHATSAPP_NUMBER = "919345957920";
+const BUSINESS_NAME = "Infinity Business Services";
 
-/* This is TRUE while the placeholder number above is unchanged.
-   While it is true, the site will NOT open WhatsApp (so no stranger gets a message).
-   The enquiry message is still shown and can be copied. */
-const IS_PLACEHOLDER = (BUSINESS_WHATSAPP_NUMBER === "919999999999");
+const IS_PLACEHOLDER = false;
+```
 
 /* Everything below runs after the page has loaded. */
 document.addEventListener("DOMContentLoaded", function () {
@@ -53,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
   /* ---------- 2. NAVBAR SHADOW + ACTIVE LINK HIGHLIGHT ---------- */
   const navbar = document.getElementById("navbar");
   const navLinks = document.querySelectorAll(".nav-link");
-  const sectionIds = ["home", "services", "how-it-works", "pricing", "about", "contact"];
+  const sectionIds = ["home", "services", "how-it-works", "work", "about", "contact"];
 
   function onScroll() {
     // Add a subtle shadow once the page is scrolled
