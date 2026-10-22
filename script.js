@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("navbar");
   const navLinks = document.querySelectorAll(".nav-link");
   const sectionIds = ["home", "services", "how-it-works", "work", "about", "contact"];
-
   function onScroll() {
     // Add a subtle shadow once the page is scrolled
     navbar.classList.toggle("scrolled", window.scrollY > 10);
