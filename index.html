@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       Infinity Business Services
+       FILE 1 of 3: index.html  (the structure and text of the site)
+
+       TIP FOR BEGINNERS:
+       - Your WhatsApp number is set in ONE place: the top of script.js.
+       - Email, office address and social media are NOT shown because
+         they have not been provided. Add them later in the Contact
+         section (look for the comment "ADD LATER").
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infinity Business Services — Marketplace Seller Support &amp; Digital Marketing</title>
+  <meta name="description" content="Infinity Business Services supports sellers on Amazon, Flipkart, Meesho and JioMart with account onboarding, catalogue management, brand stores, advertising and digital marketing." />
+
+  <!-- Google Font (if offline, the site falls back to system fonts automatically) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Link to our design file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== 1. NAVIGATION BAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="Infinity Business Services home">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 6h16M4 12h10M4 18h7"/>
+            <path d="M17 15l2 2 3-4"/>
+          </svg>
+        </span>
+        <span class="logo-text">Infinity <span>Business Services</span></span>
+      </a>
+
+      <!-- Hamburger button (shown on phones only) -->
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#work" class="nav-link">Our Work</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#quote" class="btn btn-primary nav-cta">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== 2. HERO SECTION ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="eyebrow">Marketplace Seller Support</span>
+          <h1>Marketplace Support and Business Growth for <span class="gradient-text">Online Sellers</span></h1>
+          <p class="hero-sub">Infinity Business Services supports sellers on Amazon, Flipkart, Meesho and JioMart with account onboarding, catalogue management, brand stores, advertising and digital marketing.</p>
+          <div class="hero-buttons">
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+            <a href="#quote" class="btn btn-outline">Send an Enquiry</a>
+          </div>
+          <ul class="hero-points">
+            <li>✔ Marketplace-focused support</li>
+            <li>✔ Seller onboarding assistance</li>
+            <li>✔ One-month seller training</li>
+          </ul>
+        </div>
+
+        <!-- Hero visual: a drawn "catalogue dashboard" (pure HTML/CSS/SVG, no image files needed) -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="catalogue">
+            <div class="catalogue-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="catalogue-title">Seller Dashboard</span>
+            </div>
+            <div class="catalogue-body">
+              <div class="mini-card">
+                <div class="mini-img c1">
+                  <svg viewBox="0 0 64 64" width="44" height="44"><rect x="22" y="8" width="20" height="8" rx="2" fill="#fff" opacity=".9"/><rect x="18" y="16" width="28" height="42" rx="8" fill="#fff"/><rect x="24" y="28" width="16" height="12" rx="2" fill="#6c63ff" opacity=".35"/></svg>
+                </div>
+                <div class="line w80"></div><div class="line w50"></div>
+                <span class="chip">Catalogue ✓</span>
+              </div>
+              <div class="mini-card">
+                <div class="mini-img c2">
+                  <svg viewBox="0 0 64 64" width="44" height="44"><path d="M10 26l6-14h32l6 14v6H10z" fill="#fff"/><rect x="14" y="34" width="36" height="22" rx="2" fill="#fff" opacity=".9"/><rect x="26" y="42" width="12" height="14" fill="#6c63ff" opacity=".35"/></svg>
+                </div>
+                <div class="line w80"></div><div class="line w50"></div>
+                <span class="chip">Brand Store ✓</span>
+              </div>
+              <div class="mini-card">
+                <div class="mini-img c3">
+                  <svg viewBox="0 0 64 64" width="44" height="44"><path d="M12 36l30-16v32z" fill="#fff"/><rect x="42" y="26" width="8" height="12" rx="2" fill="#fff" opacity=".85"/><rect x="16" y="38" width="8" height="14" rx="2" fill="#fff" opacity=".85"/></svg>
+                </div>
+                <div class="line w80"></div><div class="line w50"></div>
+                <span class="chip">Campaign ✓</span>
+              </div>
+            </div>
+            <div class="catalogue-foot">
+              <div class="line w60"></div>
+              <span class="status">● Ready for review</span>
+            </div>
+          </div>
+          <div class="float-badge fb1">Amazon</div>
+          <div class="float-badge fb2">Flipkart</div>
+          <div class="float-badge fb3">Meesho</div>
+          <div class="float-badge fb4">JioMart</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. SERVICES ===================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What We Do</span>
+          <h2>Our Services</h2>
+          <p>From setting up your seller account to promoting your products, we support sellers at each stage on Amazon, Flipkart, Meesho and JioMart.</p>
+        </div>
+
+        <div class="grid grid-3">
+
+          <article class="card service-card reveal">
+            <div class="why-icon" aria-hidden="true">🚀</div>
+            <h3>Seller Account Creation and Onboarding</h3>
+            <p>Help with getting started as a seller on your chosen marketplace.</p>
+            <ul class="check-list">
+              <li>New seller account creation assistance</li>
+              <li>Seller account registration and onboarding</li>
+              <li>Guidance with marketplace requirements</li>
+            </ul>
+            <a href="#quote" class="btn btn-outline btn-block" data-services="Seller Account Creation &amp; Onboarding">Enquire Now</a>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="why-icon" aria-hidden="true">🗂️</div>
+            <h3>Product Listing and Catalogue Management</h3>
+            <p>Well-organised product content and catalogue support for your marketplace listings.</p>
+            <ul class="check-list">
+              <li>Product listing and catalogue creation</li>
+              <li>Product titles and descriptions</li>
+              <li>Category selection and category approval assistance</li>
+              <li>Product approval assistance</li>
+              <li>Brand approval assistance</li>
+              <li>Keyword mapping</li>
+              <li>Inventory planning</li>
+            </ul>
+            <a href="#quote" class="btn btn-outline btn-block" data-services="Product Listing &amp; Catalogue Management|Category, Product &amp; Brand Approval Assistance|Keyword Mapping &amp; Inventory Planning">Enquire Now</a>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="why-icon" aria-hidden="true">🏷️</div>
+            <h3>Amazon Brand Content</h3>
+            <p>Brand presentation on Amazon that helps shoppers understand your products.</p>
+            <ul class="check-list">
+              <li>Amazon A+ Content creation</li>
+              <li>Amazon Brand Store creation</li>
+              <li>Store layout and brand presentation</li>
+            </ul>
+            <a href="#quote" class="btn btn-outline btn-block" data-services="Amazon A+ Content Creation|Amazon Brand Store Creation">Enquire Now</a>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="why-icon" aria-hidden="true">📣</div>
+            <h3>Advertising</h3>
+            <p>Support with creating and setting up advertising on marketplaces.</p>
+            <ul class="check-list">
+              <li>Marketplace advertising campaign creation</li>
+              <li>Campaign setup and targeting support</li>
+            </ul>
+            <a href="#quote" class="btn btn-outline btn-block" data-services="Advertising Campaign Creation &amp; Setup">Enquire Now</a>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="why-icon" aria-hidden="true">📱</div>
+            <h3>Digital Marketing</h3>
+            <p>Promotion beyond the marketplace to help more people discover your products.</p>
+            <ul class="check-list">
+              <li>Social media marketing</li>
+              <li>Influencer marketing</li>
+              <li>Product promotion support</li>
+            </ul>
+            <a href="#quote" class="btn btn-outline btn-block" data-services="Social Media Marketing|Influencer Marketing|Product Promotion Support">Enquire Now</a>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="why-icon" aria-hidden="true">🎓</div>
+            <h3>Seller Training and Support</h3>
+            <p>One month of support and training to help sellers understand how to process orders and manage product listings.</p>
+            <ul class="check-list">
+              <li>Order processing guidance</li>
+              <li>Product listing management guidance</li>
+              <li>One month of support</li>
+            </ul>
+            <a href="#quote" class="btn btn-outline btn-block" data-services="One-Month Seller Training &amp; Support">Enquire Now</a>
+          </article>
+        </div>
+
+        <div class="notice reveal">
+          <strong>Please note:</strong> Approvals, account decisions and advertising results are controlled by each marketplace. We assist with the process, but we cannot guarantee approvals, sales or profits.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. OUR WORK ===================== -->
+    <section class="section section-soft" id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our Work</span>
+          <h2>Amazon Brand Stores We Have Created</h2>
+          <p>Visit the live stores on Amazon.in. Each one opens in a new tab.</p>
+        </div>
+
+        <div class="grid grid-3">
+
+          <article class="card work-card reveal">
+            <div class="work-visual w1">
+              <span class="store-tag">Amazon Brand Store</span>
+              <span class="monogram" aria-hidden="true">GPC</span>
+            </div>
+            <div class="work-body">
+              <h3>GPC</h3>
+              <p>Amazon Brand Store created by Infinity Business Services.</p>
+              <a class="btn btn-primary btn-block" href="https://www.amazon.in/stores/GPC/page/D30CB868-6E87-4C3F-B599-E8EA6DAE3BF6?lp_asin=B08NFFTHC7&amp;ref_=ast_bln&amp;store_ref=bl_ast_dp_brandlogo_sto" target="_blank" rel="noopener noreferrer" aria-label="View Amazon Store: GPC (opens in a new tab)">View Amazon Store</a>
+            </div>
+          </article>
+
+          <article class="card work-card reveal">
+            <div class="work-visual w2">
+              <span class="store-tag">Amazon Brand Store</span>
+              <span class="monogram" aria-hidden="true">AS</span>
+            </div>
+            <div class="work-body">
+              <h3>Amma Samayal</h3>
+              <p>Amazon Brand Store created by Infinity Business Services.</p>
+              <a class="btn btn-primary btn-block" href="https://www.amazon.in/stores/AMMASAMAYAL/page/C74659BB-7F49-4399-A9BB-9D8E33316C8B?lp_asin=B0CKNSMLBX&amp;ref_=ast_bln&amp;store_ref=bl_ast_dp_brandlogo_sto" target="_blank" rel="noopener noreferrer" aria-label="View Amazon Store: Amma Samayal (opens in a new tab)">View Amazon Store</a>
+            </div>
+          </article>
+
+          <article class="card work-card reveal">
+            <div class="work-visual w3">
+              <span class="store-tag">Amazon Brand Store</span>
+              <span class="monogram" aria-hidden="true">BCP</span>
+            </div>
+            <div class="work-body">
+              <h3>Bison Consumer Products Private Limited</h3>
+              <p>Amazon Brand Store created by Infinity Business Services.</p>
+              <a class="btn btn-primary btn-block" href="https://www.amazon.in/stores/BISONCONSUMERPRODUCTSPRIVATELIMITED/page/AD69040A-A135-449C-96C1-6994A7A2258C?lp_asin=B0G64T3RD8&amp;ref_=ast_bln&amp;store_ref=bl_ast_dp_brandlogo_sto&amp;bl_grd_status=override" target="_blank" rel="noopener noreferrer" aria-label="View Amazon Store: Bison Consumer Products Private Limited (opens in a new tab)">View Amazon Store</a>
+            </div>
+          </article>
+        </div>
+        <p class="fine-print reveal">Store names and brands belong to their respective owners.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 5. HOW IT WORKS ===================== -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Simple Process</span>
+          <h2>How It Works</h2>
+          <p>Four easy steps from your first enquiry to ongoing support.</p>
+        </div>
+
+        <div class="grid grid-4 steps">
+          <div class="step reveal">
+            <div class="step-num">1</div>
+            <h3>Send an enquiry</h3>
+            <p>Tell us your marketplace and the services you need.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">2</div>
+            <h3>We discuss it</h3>
+            <p>We talk through your requirements on WhatsApp.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">3</div>
+            <h3>We do the work</h3>
+            <p>We carry out the services you agree with us.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">4</div>
+            <h3>Review &amp; support</h3>
+            <p>You review the work and get guidance as agreed.</p>
+          </div>
+        </div>
+
+        <div class="notice reveal">
+          <strong>Please note:</strong> Work that involves your marketplace seller account needs your permission and the right account access. You stay in control of your own account.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. ABOUT ===================== -->
+    <section class="section section-soft" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">About Us</span>
+          <h2>About Infinity Business Services</h2>
+          <p>Infinity Business Services assists sellers with marketplace onboarding, product catalogue creation, Amazon Brand Stores, advertising and digital marketing. We support sellers on Amazon, Flipkart, Meesho and JioMart, and we work with you to understand what you need.</p>
+        </div>
+
+        <div class="grid grid-3 why-grid">
+          <div class="why reveal">
+            <div class="why-icon" aria-hidden="true">🎯</div>
+            <h3>Marketplace-focused support</h3>
+            <p>Help built around Amazon, Flipkart, Meesho and JioMart.</p>
+          </div>
+          <div class="why reveal">
+            <div class="why-icon" aria-hidden="true">🚀</div>
+            <h3>Seller onboarding assistance</h3>
+            <p>Guidance from account creation through registration.</p>
+          </div>
+          <div class="why reveal">
+            <div class="why-icon" aria-hidden="true">🗂️</div>
+            <h3>Catalogue and content support</h3>
+            <p>Product listings, titles, descriptions and brand content.</p>
+          </div>
+          <div class="why reveal">
+            <div class="why-icon" aria-hidden="true">🎓</div>
+            <h3>One-month seller training</h3>
+            <p>One month of support to help you manage orders and listings.</p>
+          </div>
+          <div class="why reveal">
+            <div class="why-icon" aria-hidden="true">📱</div>
+            <h3>Digital marketing services</h3>
+            <p>Social media, influencer marketing and product promotion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. ENQUIRY FORM ===================== -->
+    <section class="section" id="quote">
+      <div class="container quote-grid">
+        <div class="quote-info reveal">
+          <span class="eyebrow">Get Started</span>
+          <h2>Send an Enquiry</h2>
+          <p>Tell us which marketplace you sell on and which services you need. We will discuss your requirements with you.</p>
+          <div class="notice small">
+            <strong>How this form works:</strong> This website has no server, so nothing is sent automatically. When you press the button, WhatsApp opens with your enquiry already written. Please review it and press Send yourself.
+          </div>
+        </div>
+
+        <form class="card quote-form reveal" id="quoteForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Your name *</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" autocomplete="name" />
+              <small class="error" id="nameError"></small>
+            </div>
+            <div class="field">
+              <label for="business">Business name</label>
+              <input type="text" id="business" name="business" placeholder="e.g. Sharma Handicrafts" autocomplete="organization" />
+              <small class="error" id="businessError"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+              <small class="error" id="emailError"></small>
+            </div>
+            <div class="field">
+              <label for="whatsapp">Your WhatsApp / mobile number *</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="10-digit mobile number" autocomplete="tel" />
+              <small class="error" id="whatsappError"></small>
+            </div>
+          </div>
+
+          <fieldset class="field">
+            <legend>Marketplace *</legend>
+            <div class="check-group">
+              <label class="check"><input type="checkbox" name="marketplace" value="Amazon" /><span>Amazon</span></label>
+              <label class="check"><input type="checkbox" name="marketplace" value="Flipkart" /><span>Flipkart</span></label>
+              <label class="check"><input type="checkbox" name="marketplace" value="Meesho" /><span>Meesho</span></label>
+              <label class="check"><input type="checkbox" name="marketplace" value="JioMart" /><span>JioMart</span></label>
+            </div>
+            <small class="hint">You can select more than one marketplace.</small>
+            <small class="error" id="marketplaceError"></small>
+          </fieldset>
+
+          <div class="field">
+            <label for="products">Approximate number of products *</label>
+            <input type="number" id="products" name="products" min="1" step="1" placeholder="e.g. 25" />
+            <small class="error" id="productsError"></small>
+          </div>
+
+          <fieldset class="field">
+            <legend>Services required *</legend>
+            <div class="check-group">
+              <label class="check"><input type="checkbox" name="services" value="Seller Account Creation &amp; Onboarding" /><span>Seller account creation &amp; onboarding</span></label>
+              <label class="check"><input type="checkbox" name="services" value="Product Listing &amp; Catalogue Management" /><span>Product listing &amp; catalogue management</span></label>
+              <label class="check"><input type="checkbox" name="services" value="Category, Product &amp; Brand Approval Assistance" /><span>Category, product &amp; brand approval assistance</span></label>
+              <label class="check"><input type="checkbox" name="services" value="Keyword Mapping &amp; Inventory Planning" /><span>Keyword mapping &amp; inventory planning</span></label>
+              <label class="check"><input type="checkbox" name="services" value="Amazon A+ Content Creation" /><span>Amazon A+ Content</span></label>
+              <label class="check"><input type="checkbox" name="services" value="Amazon Brand Store Creation" /><span>Amazon Brand Store</span></label>
+              <label class="check"><input type="checkbox" name="services" value="Advertising Campaign Creation &amp; Setup" /><span>Advertising campaigns</span></label>
+              <label class="check"><input type="checkbox" name="services" value="Social Media Marketing" /><span>Social media marketing</span></label>
+              <label class="check"><input type="checkbox" name="services" value="Influencer Marketing" /><span>Influencer marketing</span></label>
+              <label class="check"><input type="checkbox" name="services" value="Product Promotion Support" /><span>Product promotion support</span></label>
+              <label class="check"><input type="checkbox" name="services" value="One-Month Seller Training &amp; Support" /><span>One-month seller training &amp; support</span></label>
+            </div>
+            <small class="error" id="servicesError"></small>
+          </fieldset>
+
+          <div class="field">
+            <label for="details">Additional requirements</label>
+            <textarea id="details" name="details" rows="4" placeholder="Tell us about your products, your brand or anything else you need..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Prepare WhatsApp Enquiry</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
+          <!-- Shown after a valid submit so the visitor can see / copy the message -->
+          <div class="preview" id="preview" hidden>
+            <h4>Your enquiry message</h4>
+            <pre id="previewText"></pre>
+            <div class="preview-actions">
+              <a class="btn btn-primary" id="waLink" href="https://wa.me/919345957920" target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
+              <button type="button" class="btn btn-outline" id="copyBtn">Copy message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== 8. CONTACT ===================== -->
+    <section class="section section-soft" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Get in Touch</h2>
+          <p>Contact us to discuss your requirements. Fill in the enquiry form or message us directly on WhatsApp.</p>
+        </div>
+
+        <div class="grid grid-3 contact-grid">
+          <div class="card contact-card reveal">
+            <div class="why-icon" aria-hidden="true">🏢</div>
+            <h3>Infinity Business Services</h3>
+            <p>Marketplace seller support and digital marketing services.</p>
+          </div>
+
+          <div class="card contact-card reveal">
+            <div class="why-icon" aria-hidden="true">💬</div>
+            <h3>WhatsApp</h3>
+            <!-- The number is set in script.js. The text below is the same number, for when JavaScript is off. -->
+            <p><a href="https://wa.me/919345957920" data-wa-link data-wa-number target="_blank" rel="noopener noreferrer">+91 93459 57920</a></p>
+          </div>
+
+          <div class="card contact-card reveal">
+            <div class="why-icon" aria-hidden="true">📝</div>
+            <h3>Send an Enquiry</h3>
+            <p><a href="#quote" class="btn btn-primary">Open Enquiry Form</a></p>
+          </div>
+          <!-- ADD LATER: an email address, office address or social media links can be added as
+               more cards here once you have them. Nothing is shown until then. -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== 9. FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-light" aria-label="Infinity Business Services home">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/><path d="M17 15l2 2 3-4"/></svg>
+          </span>
+          <span class="logo-text">Infinity <span>Business Services</span></span>
+        </a>
+        <p>Marketplace seller support and digital marketing services for sellers on Amazon, Flipkart, Meesho and JioMart.</p>
+        <p class="footer-wa">WhatsApp: <a href="https://wa.me/919345957920" data-wa-link data-wa-number target="_blank" rel="noopener noreferrer">+91 93459 57920</a></p>
+      </div>
+
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Our Work</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#quote">Send an Enquiry</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Seller Account Creation &amp; Onboarding</a></li>
+          <li><a href="#services">Product Listing &amp; Catalogue Management</a></li>
+          <li><a href="#services">Amazon Brand Content</a></li>
+          <li><a href="#services">Advertising</a></li>
+          <li><a href="#services">Digital Marketing</a></li>
+          <li><a href="#services">Seller Training &amp; Support</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Infinity Business Services. All rights reserved.</p>
+      <p class="disclaimer">Infinity Business Services is an independent service provider and is not affiliated with, endorsed by or sponsored by Amazon, Flipkart, Meesho or JioMart. All marketplace names and trademarks belong to their respective owners.</p>
+    </div>
+  </footer>
+
+  <!-- Link to our behaviour file -->
+  <script src="script.js"></script>
+</body>
+</html>
