@@ -8,7 +8,7 @@
      - Start with the country code. For India that is 91.
      - Example: if your number is 98765 43210, write "919876543210"
    ============================================================ */
-const BUSINESS_WHATSAPP_NUMBER = "9345957920";
+const BUSINESS_WHATSAPP_NUMBER = "919345957920";
 const BUSINESS_NAME = "Infinity Business Services";
 const IS_PLACEHOLDER = false;
 ```
