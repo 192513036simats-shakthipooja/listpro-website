@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       Infinity Business Services — E-commerce Listing Services
+       FILE 1 of 3: index.html  (the structure and text of the site)
+
+       TIP FOR BEGINNERS:
+       - To change the business name, use your editor's
+         "Find and Replace" (Ctrl+H) and replace "Infinity Business Services" with your name.
+       - Anything marked "EDIT ME" is a placeholder you should change.
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infinity Business Services — Meesho, Amazon &amp; Flipkart Product Listing</title>
+  <meta name="description" content="Infinity Business Services helps sellers prepare professional product listings for Meesho, Amazon and Flipkart." />
+
+  <!-- Google Font (if offline, the site falls back to system fonts automatically) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Link to our design file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== 1. NAVIGATION BAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="Infinity Business Services home">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 6h16M4 12h10M4 18h7"/>
+            <path d="M17 15l2 2 3-4"/>
+          </svg>
+        </span>
+        <span class="logo-text">Infinity <span>Business Services</span></span>
+      </a>
+
+      <!-- Hamburger button (shown on phones only) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#quote" class="btn btn-primary nav-cta">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== 2. HERO SECTION ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="eyebrow">E-commerce Listing Services</span>
+          <h1>Grow Your Online Business with <span class="gradient-text">Professional Product Listing Services</span></h1>
+          <p class="hero-sub">We help sellers prepare professional product listings for Meesho, Amazon, and Flipkart.</p>
+          <div class="hero-buttons">
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+            <a href="#quote" class="btn btn-outline">Request a Quote</a>
+          </div>
+          <ul class="hero-points">
+            <li>✔ Marketplace-ready content</li>
+            <li>✔ Clear communication</li>
+            <li>✔ Built for online sellers</li>
+          </ul>
+        </div>
+
+        <!-- Hero visual: a drawn "catalogue dashboard" (pure HTML/CSS/SVG, no image files needed) -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="catalogue">
+            <div class="catalogue-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="catalogue-title">Product Catalogue</span>
+            </div>
+            <div class="catalogue-body">
+              <div class="mini-card">
+                <div class="mini-img c1">
+                  <svg viewBox="0 0 64 64" width="44" height="44"><rect x="22" y="8" width="20" height="8" rx="2" fill="#fff" opacity=".9"/><rect x="18" y="16" width="28" height="42" rx="8" fill="#fff"/><rect x="24" y="28" width="16" height="12" rx="2" fill="#6c63ff" opacity=".35"/></svg>
+                </div>
+                <div class="line w80"></div><div class="line w50"></div>
+                <span class="chip">Title ✓</span>
+              </div>
+              <div class="mini-card">
+                <div class="mini-img c2">
+                  <svg viewBox="0 0 64 64" width="44" height="44"><path d="M20 12l-12 10 8 8 6-4v30h28V26l6 4 8-8-12-10c-3 5-8 7-12 7s-9-2-12-7z" fill="#fff"/></svg>
+                </div>
+                <div class="line w80"></div><div class="line w50"></div>
+                <span class="chip">Images ✓</span>
+              </div>
+              <div class="mini-card">
+                <div class="mini-img c3">
+                  <svg viewBox="0 0 64 64" width="44" height="44"><circle cx="22" cy="40" r="10" fill="#fff"/><circle cx="44" cy="40" r="10" fill="#fff"/><rect x="26" y="14" width="12" height="18" rx="6" fill="#fff" opacity=".85"/></svg>
+                </div>
+                <div class="line w80"></div><div class="line w50"></div>
+                <span class="chip">Attributes ✓</span>
+              </div>
+            </div>
+            <div class="catalogue-foot">
+              <div class="line w60"></div>
+              <span class="status">● Ready for review</span>
+            </div>
+          </div>
+          <div class="float-badge fb1">Meesho listings</div>
+          <div class="float-badge fb2">Amazon listings</div>
+          <div class="float-badge fb3">Flipkart listings</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. MARKETPLACE SERVICES ===================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What We Do</span>
+          <h2>Our Marketplace Listing Services</h2>
+          <p>We prepare product listings for three marketplaces. Marketplace names are used only to describe the platforms we prepare listings for.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card service-card reveal">
+            <div class="icon-badge">Meesho</div>
+            <h3>Meesho Product Listing</h3>
+            <p>Clear, well-organised listing content prepared for Meesho. A good fit for resellers, small manufacturers and home-based sellers who want their products presented neatly.</p>
+            <ul class="check-list">
+              <li>Product title and description</li>
+              <li>Category selection</li>
+              <li>Product details and attributes (such as size and colour)</li>
+              <li>Review before you upload</li>
+            </ul>
+            <a href="#quote" class="card-link" data-marketplace="Meesho">Request a Meesho quote →</a>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="icon-badge">Amazon</div>
+            <h3>Amazon Product Listing</h3>
+            <p>Structured listing content prepared to follow Amazon's listing format, so shoppers can understand your product quickly and your detail page looks complete.</p>
+            <ul class="check-list">
+              <li>Product title and key bullet points</li>
+              <li>Detailed product description</li>
+              <li>Category selection and attributes</li>
+              <li>Review before you upload</li>
+            </ul>
+            <a href="#quote" class="card-link" data-marketplace="Amazon">Request an Amazon quote →</a>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="icon-badge">Flipkart</div>
+            <h3>Flipkart Product Listing</h3>
+            <p>Accurate, organised listing information prepared for Flipkart, with the right category and product attributes filled in so your listing is ready to go.</p>
+            <ul class="check-list">
+              <li>Product title and description</li>
+              <li>Category selection</li>
+              <li>Product attributes and specifications</li>
+              <li>Review before you upload</li>
+            </ul>
+            <a href="#quote" class="card-link" data-marketplace="Flipkart">Request a Flipkart quote →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. HOW IT WORKS ===================== -->
+    <section class="section section-soft" id="how-it-works">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Simple Process</span>
+          <h2>How It Works</h2>
+          <p>Four easy steps from your product details to finished listing content.</p>
+        </div>
+
+        <div class="grid grid-4 steps">
+          <div class="step reveal">
+            <div class="step-num">1</div>
+            <h3>Share your details</h3>
+            <p>Share your product information and images.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">2</div>
+            <h3>Choose a marketplace</h3>
+            <p>Choose the listing service you need: Meesho, Amazon, Flipkart or more than one.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">3</div>
+            <h3>We prepare it</h3>
+            <p>We prepare the listing content.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">4</div>
+            <h3>Review &amp; receive</h3>
+            <p>You review and receive the completed work.</p>
+          </div>
+        </div>
+
+        <div class="notice reveal">
+          <strong>Please note:</strong> We prepare your listing content. Publishing directly to a marketplace requires the appropriate seller account access and permission from you. We will never ask for access without your clear consent, and you stay in control of your seller account.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. PRICING ===================== -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Pricing</span>
+          <h2>Simple, Affordable Pricing</h2>
+          <p class="sample-label">Example prices only — these are sample starting prices. Edit them to match your real rates.</p>
+        </div>
+
+        <div class="grid grid-3 pricing-grid">
+          <article class="card price-card reveal">
+            <h3>Basic Listing Content</h3>
+            <div class="price"><span class="amount">₹49</span><span class="per">per product</span></div>
+            <ul class="check-list">
+              <li>Product title</li>
+              <li>Short description</li>
+              <li>Basic product details</li>
+            </ul>
+            <a href="#quote" class="btn btn-outline btn-block">Request a Quote</a>
+          </article>
+
+          <article class="card price-card featured reveal">
+            <span class="ribbon">Most Popular</span>
+            <h3>Standard Listing Package</h3>
+            <div class="price"><span class="amount">₹99</span><span class="per">per product</span></div>
+            <ul class="check-list">
+              <li>Title and detailed description</li>
+              <li>Key feature bullet points</li>
+              <li>Category selection &amp; attributes</li>
+                          </ul>
+            <a href="#quote" class="btn btn-primary btn-block">Request a Quote</a>
+          </article>
+
+          <article class="card price-card reveal">
+            <h3>Multiple Marketplaces</h3>
+            <div class="price"><span class="amount small">Custom quote</span><span class="per">based on your products</span></div>
+            <ul class="check-list">
+              <li>Listings for two or three marketplaces</li>
+              <li>Quote based on number of products</li>
+              <li>Tell us what you need in the form</li>
+            </ul>
+            <a href="#quote" class="btn btn-outline btn-block">Request a Quote</a>
+          </article>
+        </div>
+        <p class="fine-print reveal">Final pricing depends on product type, number of products and the work required. Prices shown are examples only.</p>
+      </div>
+    </section>
+
+    <!-- ===================== 6. PORTFOLIO ===================== -->
+    <section class="section section-soft" id="portfolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Sample Work</span>
+          <h2>Listing Examples</h2>
+          <p class="sample-label">Demonstration work only. These are not actual marketplace listings, and they do not represent client work or results.</p>
+        </div>
+
+        <div class="grid grid-3">
+
+          <!-- Example 1 -->
+          <article class="card portfolio-card reveal">
+            <div class="product-img p1">
+              <span class="demo-tag">Demo sample</span>
+              <!--
+                HOW TO USE A REAL IMAGE INSTEAD:
+                Replace the <svg> below with:
+                <img src="my-bottle.jpg" alt="Steel water bottle" />
+                (If the image fails to load, a neat placeholder shows automatically.)
+              -->
+              <svg viewBox="0 0 120 140" width="110" height="130" role="img" aria-label="Illustration of a water bottle">
+                <rect x="46" y="8" width="28" height="14" rx="4" fill="#fff"/>
+                <rect x="38" y="22" width="44" height="14" rx="5" fill="#e8e6ff"/>
+                <rect x="34" y="34" width="52" height="96" rx="14" fill="#fff"/>
+                <rect x="44" y="60" width="32" height="30" rx="4" fill="#6c63ff" opacity=".25"/>
+              </svg>
+            </div>
+            <div class="portfolio-body">
+              <h3>Insulated Steel Water Bottle, 750 ml</h3>
+              <p class="sample-price">₹499 <small>sample price</small></p>
+              <p>A sturdy double-wall bottle designed to keep drinks cold or hot, suitable for school, office, gym and travel.</p>
+              <ul class="features">
+                <li>Double-wall insulated body</li>
+                <li>Leak-resistant lid</li>
+                <li>Easy-carry design</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Example 2 -->
+          <article class="card portfolio-card reveal">
+            <div class="product-img p2">
+              <span class="demo-tag">Demo sample</span>
+              <svg viewBox="0 0 120 140" width="110" height="130" role="img" aria-label="Illustration of a kurti">
+                <path d="M38 12l-24 20 14 16 12-8v78h40V40l12 8 14-16-24-20c-6 10-14 14-22 14s-16-4-22-14z" fill="#fff"/>
+                <path d="M60 26v100" stroke="#6c63ff" stroke-width="2" opacity=".3"/>
+              </svg>
+            </div>
+            <div class="portfolio-body">
+              <h3>Cotton Printed Kurti for Women</h3>
+              <p class="sample-price">₹799 <small>sample price</small></p>
+              <p>A comfortable straight-fit kurti in soft cotton with a simple printed design for everyday wear.</p>
+              <ul class="features">
+                <li>Breathable cotton fabric</li>
+                <li>Straight fit, 3/4 sleeves</li>
+                <li>Size chart included</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Example 3 -->
+          <article class="card portfolio-card reveal">
+            <div class="product-img p3">
+              <span class="demo-tag">Demo sample</span>
+              <svg viewBox="0 0 120 140" width="110" height="130" role="img" aria-label="Illustration of wireless earbuds">
+                <rect x="24" y="64" width="72" height="54" rx="22" fill="#fff"/>
+                <line x1="24" y1="84" x2="96" y2="84" stroke="#6c63ff" stroke-width="2" opacity=".3"/>
+                <rect x="36" y="22" width="14" height="36" rx="7" fill="#fff" opacity=".9"/>
+                <rect x="70" y="22" width="14" height="36" rx="7" fill="#fff" opacity=".9"/>
+              </svg>
+            </div>
+            <div class="portfolio-body">
+              <h3>Wireless Bluetooth Earbuds with Charging Case</h3>
+              <p class="sample-price">₹1,299 <small>sample price</small></p>
+              <p>Compact earbuds with a pocket-size charging case, made for calls, music and daily commuting.</p>
+              <ul class="features">
+                <li>Bluetooth wireless connection</li>
+                <li>Portable charging case</li>
+                <li>Built-in microphone</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. WHY CHOOSE US / ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">About Infinity Business Services</span>
+          <h2>Why Choose Us</h2>
+          <p>Infinity Business Services helps sellers prepare clear, professional product listings for Meesho, Amazon and Flipkart. <!-- OPTIONAL: add your own business story here. --></p>
+        </div>
+
+        <div class="grid grid-3 why-grid">
+          <div class="why reveal">
+            <div class="why-icon">₹</div>
+            <h3>Affordable services</h3>
+            <p>Clear pricing, with quotes based on your products.</p>
+          </div>
+          <div class="why reveal">
+            <div class="why-icon">🔍</div>
+            <h3>Attention to product details</h3>
+            <p>We check specifications, categories and attributes carefully.</p>
+          </div>
+          <div class="why reveal">
+            <div class="why-icon">💬</div>
+            <h3>Clear communication</h3>
+            <p>You always know what we need and where your work stands.</p>
+          </div>
+          <div class="why reveal">
+            <div class="why-icon">🤝</div>
+            <h3>Support for online sellers</h3>
+            <p>Friendly help for first-time sellers and growing brands.</p>
+          </div>
+          <div class="why reveal">
+            <div class="why-icon">✍️</div>
+            <h3>Customised listing content</h3>
+            <p>Listing content written around your own product details.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 8. REQUEST A QUOTE FORM ===================== -->
+    <section class="section section-soft" id="quote">
+      <div class="container quote-grid">
+        <div class="quote-info reveal">
+          <span class="eyebrow">Get Started</span>
+          <h2>Request a Quote</h2>
+          <p>Tell us which marketplace you sell on and what you need. We'll use your details to prepare a quote.</p>
+          <div class="notice small">
+            <strong>How this form works:</strong> This website has no server, so nothing is stored or sent automatically. When you press the button, your details are turned into a ready-to-send message. Once the business WhatsApp number is set up, WhatsApp opens so you can send it to us yourself.
+          </div>
+        </div>
+
+        <form class="card quote-form reveal" id="quoteForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Your name *</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Priya Sharma" autocomplete="name" />
+              <small class="error" id="nameError"></small>
+            </div>
+            <div class="field">
+              <label for="business">Business name</label>
+              <input type="text" id="business" name="business" placeholder="e.g. Sharma Handicrafts" autocomplete="organization" />
+              <small class="error" id="businessError"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+              <small class="error" id="emailError"></small>
+            </div>
+            <div class="field">
+              <label for="whatsapp">WhatsApp number *</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="10-digit mobile number" autocomplete="tel" />
+              <small class="error" id="whatsappError"></small>
+            </div>
+          </div>
+
+          <fieldset class="field">
+            <legend>Marketplace *</legend>
+            <div class="check-group">
+              <label class="check"><input type="checkbox" name="marketplace" value="Meesho" /><span>Meesho</span></label>
+              <label class="check"><input type="checkbox" name="marketplace" value="Amazon" /><span>Amazon</span></label>
+              <label class="check"><input type="checkbox" name="marketplace" value="Flipkart" /><span>Flipkart</span></label>
+            </div>
+            <small class="hint">You can select more than one marketplace.</small>
+            <small class="error" id="marketplaceError"></small>
+          </fieldset>
+
+          <div class="field">
+            <label for="products">Approximate number of products *</label>
+            <input type="number" id="products" name="products" min="1" step="1" placeholder="e.g. 25" />
+            <small class="error" id="productsError"></small>
+          </div>
+
+          <fieldset class="field">
+            <legend>Required services *</legend>
+            <div class="check-group">
+              <label class="check"><input type="checkbox" name="services" value="New product listing" /><span>New product listing</span></label>
+              <label class="check"><input type="checkbox" name="services" value="Title and description writing" /><span>Title &amp; description</span></label>
+              <label class="check"><input type="checkbox" name="services" value="Category selection" /><span>Category selection</span></label>
+              <label class="check"><input type="checkbox" name="services" value="Attribute entry" /><span>Attributes &amp; details</span></label>
+              <label class="check"><input type="checkbox" name="services" value="Existing listing improvement" /><span>Improve existing listing</span></label>
+            </div>
+            <small class="error" id="servicesError"></small>
+          </fieldset>
+
+          <div class="field">
+            <label for="details">Additional details</label>
+            <textarea id="details" name="details" rows="4" placeholder="Tell us about your products, deadlines or anything else..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Prepare WhatsApp Enquiry</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
+          <!-- Shown after a valid submit so the user can see / copy the message -->
+          <div class="preview" id="preview" hidden>
+            <h4>Your enquiry message</h4>
+            <pre id="previewText"></pre>
+            <div class="preview-actions">
+              <a class="btn btn-primary" id="waLink" href="#" target="_blank" rel="noopener">Open WhatsApp</a>
+              <button type="button" class="btn btn-outline" id="copyBtn">Copy message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== 9. CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contact</span>
+          <h2>Get in Touch</h2>
+          <p>Send an enquiry using the form above. Our contact details will appear here once they are added.</p>
+        </div>
+
+        <div class="grid grid-4 contact-grid">
+          <div class="card contact-card reveal">
+            <div class="why-icon">✉️</div>
+            <h3>Email</h3>
+            <!-- EDIT ME: replace the text below with your real email address -->
+            <p class="placeholder">[Business email — to be added]</p>
+          </div>
+          <div class="card contact-card reveal">
+            <div class="why-icon">📱</div>
+            <h3>WhatsApp</h3>
+            <!-- This link is filled in automatically from the number you set in script.js -->
+            <p><a href="#quote" id="contactWhatsapp" class="placeholder">[WhatsApp number — placeholder]</a></p>
+          </div>
+          <div class="card contact-card reveal">
+            <div class="why-icon">📍</div>
+            <h3>Location</h3>
+            <!-- EDIT ME: replace the text below with your real location -->
+            <p class="placeholder">[Business location — to be added]</p>
+          </div>
+          <div class="card contact-card reveal">
+            <div class="why-icon">🕘</div>
+            <h3>Business Hours</h3>
+            <!-- EDIT ME: replace the text below with your real business hours -->
+            <p class="placeholder">[Business hours — to be added]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== 10. FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-light">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/><path d="M17 15l2 2 3-4"/></svg>
+          </span>
+          <span class="logo-text">Infinity <span>Business Services</span></span>
+        </a>
+        <p>Professional product listings for Meesho, Amazon and Flipkart sellers.</p>
+        <div class="socials">
+          <!-- EDIT ME: replace each # with your real profile link, or delete icons you do not use -->
+          <a href="#" aria-label="Instagram (placeholder)">IG</a>
+          <a href="#" aria-label="Facebook (placeholder)">FB</a>
+          <a href="#" aria-label="LinkedIn (placeholder)">IN</a>
+          <a href="#" aria-label="YouTube (placeholder)">YT</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Meesho Product Listing</a></li>
+          <li><a href="#services">Amazon Product Listing</a></li>
+          <li><a href="#services">Flipkart Product Listing</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Infinity Business Services. All rights reserved.</p>
+      <p class="disclaimer">Infinity Business Services is an independent service and is not affiliated with or endorsed by Meesho, Amazon or Flipkart. All marketplace names belong to their respective owners.</p>
+    </div>
+  </footer>
+
+  <!-- Link to our behaviour file -->
+  <script src="script.js"></script>
+</body>
+</html>
