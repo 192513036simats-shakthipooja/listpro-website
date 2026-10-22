@@ -11,7 +11,6 @@
 const BUSINESS_WHATSAPP_NUMBER = "919345957920";
 const BUSINESS_NAME = "Infinity Business Services";
 const IS_PLACEHOLDER = false;
-```
 
 
 /* Everything below runs after the page has loaded. */
