@@ -540,6 +540,152 @@ p  { margin: 0 0 1rem; color: var(--navy-soft); }
 .service-card .card-link { margin-top: auto; }
 
 /* Small helper text under the marketplace checkboxes */
+```css
+/* ---------- NEW AMAZON BRAND STORE PORTFOLIO ---------- */
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-card .check-list {
+  margin-bottom: 1.5rem;
+}
+
+.service-card > .btn {
+  margin-top: auto;
+}
+
+.work-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.work-visual {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient);
+}
+
+.work-visual::before,
+.work-visual::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+}
+
+.work-visual::before {
+  top: -90px;
+  right: -40px;
+}
+
+.work-visual::after {
+  bottom: -110px;
+  left: -30px;
+}
+
+.work-visual.w2 {
+  background: linear-gradient(135deg, #7547d8, #b16bea);
+}
+
+.work-visual.w3 {
+  background: linear-gradient(135deg, #1769aa, #5268f5);
+}
+
+.store-tag {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.monogram {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-head);
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.work-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.work-body h3 {
+  overflow-wrap: anywhere;
+}
+
+.work-body p {
+  flex: 1;
+}
+
+.work-body .btn {
+  margin-top: auto;
+}
+
+.notice strong {
+  color: var(--navy);
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 1.7rem;
+  margin-bottom: 0.6rem;
+  color: var(--navy-soft);
+  font-size: 0.95rem;
+}
+
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--purple);
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
+  .work-visual {
+    min-height: 170px;
+  }
+
+  .monogram {
+    font-size: 2.5rem;
+  }
+
+  .work-body {
+    padding: 1.2rem;
+  }
+}
+```
+
 .hint { display: block; margin-top: .4rem; color: var(--navy-soft); font-size: .82rem; }
 
 /* Contact placeholders look clearly "to be filled in" */
